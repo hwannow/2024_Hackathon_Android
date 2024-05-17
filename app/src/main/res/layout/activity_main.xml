@@ -8,26 +8,47 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fg"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/bottomnav"
         />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomnav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:itemIconTint="#000000"
-        app:itemTextColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_chat"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:menu="@menu/bottomnev"
-        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toTopOf="@id/btn_quiz"
+        android:layout_marginBottom="20dp"
+        android:text="챗봇과 대화하기"
+        android:background="@drawable/chat_btn"
         />
 
-
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_quiz"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="25dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_emotion"
+        android:background="@drawable/quiz_btn"
+        android:layout_marginBottom="40dp"
+        android:text="퀴즈 풀기"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_emotion"
+        android:layout_width="130dp"
+        android:layout_marginEnd="25dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/emotion_btn"
+        app:layout_constraintStart_toEndOf="@id/btn_quiz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        android:text="감정 맞히기"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

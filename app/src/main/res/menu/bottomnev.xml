@@ -13,11 +13,6 @@
         />
 
     <item
-        android:title="투두"
-        android:id="@+id/todo"
-        android:icon="@drawable/check_icon"
-        />
-    <item
         android:title="채팅"
         android:id="@+id/chat"
         android:icon="@drawable/chat_icon"
