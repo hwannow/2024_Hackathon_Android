@@ -7,6 +7,10 @@ android {
     namespace = "com.example.hackathon"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.hackathon"
         minSdk = 24

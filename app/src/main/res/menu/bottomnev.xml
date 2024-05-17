@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="메인"
+        android:id="@+id/mypage"
+        android:icon="@drawable/home_icon"
+        />
+
+    <item
+        android:title="퀴즈"
+        android:id="@+id/quiz"
+        android:icon="@drawable/quiz_icon"
+        />
+
+    <item
+        android:title="투두"
+        android:id="@+id/todo"
+        android:icon="@drawable/check_icon"
+        />
+    <item
+        android:title="채팅"
+        android:id="@+id/chat"
+        android:icon="@drawable/chat_icon"
+        />
+
+
+</menu>
